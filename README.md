@@ -9,6 +9,6 @@ Se implementará y validará un modelo de simulación de transporte de sedimento
 
 El código que se implementará será en python, y será desde una a múltiples partículas.
 
-El link del board en [Trello]()
+El link del board en [Trello](https://trello.com/b/Y6Fa1G1A/mcoc-proyecto-2)
 
 Cada entrega se puede ver en su carpeta respectiva.
