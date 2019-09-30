@@ -1,8 +1,8 @@
 # Proyecto 2 Métodos Computacionales en Obras Civiles
 
-Tomás Arteaga
-Vicente Carreño
-Nicolás Silva (Jefe)
+Tomás Arteaga,
+Vicente Carreño,
+Nicolás Silva (Jefe),
 Andrés Vera
 
 Se implementará y validará un modelo de simulación de transporte de sedimentos en base a una método lagrangiano, es decir que sigue a cada partícula individualmente. La validación se hará a nivel del comportamiento de una partícula y luego con el comportamiento estadístico de cantidades crecientes de partículas.
