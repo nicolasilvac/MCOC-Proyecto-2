@@ -1,4 +1,5 @@
 # Proyecto 2 Métodos Computacionales en Obras Civiles
+Universidad de los Andes
 ### Grupo 0
 Integrantes:
 - Tomás Arteaga,
