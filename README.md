@@ -11,7 +11,7 @@ Integrantes:
 Se implementará y validará un modelo de simulación de transporte de sedimentos en base a una método lagrangiano, es decir que sigue a cada partícula individualmente. La validación se hará a nivel del comportamiento de una partícula y luego con el comportamiento estadístico de cantidades crecientes de partículas.
 
 ## Entregas
-[Entrega 1] Crear Repositorio en GitHub con el nombre de MCOC-Proyecto-2 
+[Entrega 1] Crear Repositorio en GitHub con el nombre de MCOC-Proyecto-2 :heavy_check_mark:
 [Entrega 3] Código donde se implementa el código para una partícula. 
 
 ## Información adicional
