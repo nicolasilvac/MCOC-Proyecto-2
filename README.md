@@ -13,7 +13,7 @@ Se implementará y validará un modelo de simulación de transporte de sedimento
 ## Entregas
 - [Entrega 1]: Crear Repositorio en GitHub con el nombre de MCOC-Proyecto-2. :heavy_check_mark:
 - [Entrega 2]: Crear Board en Trello coordinando los esfuerzos de los integrantes. :heavy_check_mark:
-- [Entrega 3]: Código donde se implementa el código para una partícula. 
+- [Entrega 3]: Código donde se implementa el código para una partícula. :heavy_check_mark:
 - [Entrega 4]: Código donde se implementa el código para múltiples partículas
 - [Entrega 5]: Reunirse con el profesor para ver una mejora en la implementación del código.
 - [Entrega 6]: Idem [Entrega 4]
