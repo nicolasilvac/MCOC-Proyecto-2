@@ -95,10 +95,10 @@ for i in range(len(posicion)):
     posicion_i=posicion[i]
     velocidad_i=velocidad[i]
     subplot(2,1,1)
-    plot(t,posicion_i[:,0])# label="x")
-    plot(t,posicion_i[:,1])#, label="y")
+    plot(t,posicion_i[:,0])
+    plot(t,posicion_i[:,1])
     subplot(2,1,2)
-    plot(t,velocidad_i[:,0])#, label="vx")
-    plot(t,velocidad_i[:,1])#, label="vy")
+    plot(t,velocidad_i[:,0])
+    plot(t,velocidad_i[:,1])
 show()
 
