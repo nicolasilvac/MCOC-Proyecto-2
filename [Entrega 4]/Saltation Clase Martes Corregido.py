@@ -1,19 +1,20 @@
 from matplotlib.pylab import * 
 import random
 #Unidades base son SI (m, kg, s)
+#Se proporcionan variaciones a las unidades SI para facilitar calculos a futuro
 _m = 1.
 _kg = 1.
 _s = 1.
 _mm = 1e-3*_m
 _cm = 1e-2*_m
 _gr = 1e-3*_kg
-_in = 2.54*_cm
+_inches = 2.54*_cm
 
-g = 9.81*_m/_s**2
-d = 1*_mm
+g = 9.81*_m/_s**2 #Fuerza gravedad
+d = 1*_mm #Diametro de la particula
 
-rho_agua = 1000. *_kg/(_m**3)
-rho_particula = 2650. *_kg/(_m**3)
+rho_agua = 1000. *_kg/(_m**3) #Densidad del agua
+rho_particula = 2650. *_kg/(_m**3) #Densidad de la particula
 
 
 dt = 0.001*_s	#paso de tiempo
@@ -28,9 +29,9 @@ y0 = 30*d*rand(Nparticulas) + d
 vx0 = rand(Nparticulas)/2
 vy0 = rand(Nparticulas)/2
 
-A = pi*(d/2)**2
-V = (4./3.)*pi*(d/2)**3
-m = rho_particula*V
+A = pi*(d/2)**2 #Area Particula
+V = (4./3.)*pi*(d/2)**3 #Volumen Particula
+m = rho_particula*V #Masa particula
 
 W = array([0, -m*g])
 
@@ -53,7 +54,7 @@ jhat = array([0,1])
 #TODO ESTO LO BORRA EL PROFE  def velocity_field(x):
 #TODO ESTO LO BORRA EL PROFE 	return vff
 Variable=0.14
-def velocity_field(x):
+def velocity_field(x): # Campo de velocidad para la particula
 	z = x[1] / d
 	if z > 1. /30:
 		uf = Variable*log(30.*z)/0.41
@@ -61,7 +62,7 @@ def velocity_field(x):
 		uf = 0 
 	return array ([uf,0])
 vfx = velocity_field([0,4*d])[0]
-k_penal = 1000*0.5*Cd*rho_agua*A*norm(vfx)**2/(1*_mm)
+k_penal = 1000*0.5*Cd*rho_agua*A*norm(vfx)**2/(1*_mm) #penalizacion por choque de particulas 
 def particula(z,t):
 	zp = zeros(4*Nparticulas)
 
