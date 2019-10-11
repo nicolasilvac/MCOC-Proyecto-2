@@ -20,7 +20,7 @@ rho_particula = 2650. *_kg/(_m**3) 	#Densidad de la particula
 
 #transcurso del tiempo
 dt = 0.001*_s	#paso de tiempo
-tmax =0.5		#tiempo maximo de simulacion
+tmax = 2*_s		#tiempo maximo de simulacion
 ti = 0. * _s 	#tiempo actual
 t = arange(0, tmax, dt)
 Nt = len(t)
