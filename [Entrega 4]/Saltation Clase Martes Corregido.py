@@ -1,5 +1,7 @@
 from matplotlib.pylab import * 
 import random
+import time
+start_time = time.time()
 #Unidades base son SI (m, kg, s)
 #Se proporcionan variaciones a las unidades SI para facilitar calculos a futuro
 _m = 1.
@@ -137,5 +139,5 @@ for i in range(Nparticulas):
 # plot(t,v[:,1],label = "vy")
 
 #axis("equal")
-
+print "time elapsed: {:.2f}s".format(time.time() - start_time)
 show()
