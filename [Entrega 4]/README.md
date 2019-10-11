@@ -33,15 +33,15 @@ El código se basa en iterar la posición en el plano XY de cada partícula, la 
 ![](https://github.com/nicolasilvac/MCOC-Proyecto-2/blob/master/%5BEntrega%204%5D/%5BGr%C3%A1ficos%5D/simulacion_2.png)
 ### Para 5 partículas:
 ![](https://github.com/nicolasilvac/MCOC-Proyecto-2/blob/master/%5BEntrega%204%5D/%5BGr%C3%A1ficos%5D/simulacion_5.png)
-#### Acercamiento
+#### Acercamiento:
 ![](https://github.com/nicolasilvac/MCOC-Proyecto-2/blob/master/%5BEntrega%204%5D/%5BGr%C3%A1ficos%5D/simulacion_5_zoom.png)
 ### Para 10 partículas:
 ![](https://github.com/nicolasilvac/MCOC-Proyecto-2/blob/master/%5BEntrega%204%5D/%5BGr%C3%A1ficos%5D/simulacion_10.png)
-#### Acercamiento
+#### Acercamiento:
 ![](https://github.com/nicolasilvac/MCOC-Proyecto-2/blob/master/%5BEntrega%204%5D/%5BGr%C3%A1ficos%5D/simulacion_10_zoom.png)
 ### Para 20 partículas:
 ![](https://github.com/nicolasilvac/MCOC-Proyecto-2/blob/master/%5BEntrega%204%5D/%5BGr%C3%A1ficos%5D/simulacion_20.png)
-#### Acercamiento
+#### Acercamiento:
 ![](https://github.com/nicolasilvac/MCOC-Proyecto-2/blob/master/%5BEntrega%204%5D/%5BGr%C3%A1ficos%5D/simulacion_10_zoom.png)
 
 
