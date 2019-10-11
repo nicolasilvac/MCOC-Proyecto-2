@@ -121,6 +121,5 @@ ax.axhline(0,color="k",linestyle='dotted')
 plt.xlabel("x/d")
 plt.ylabel("z/d")
 plt.title("Trayectoria de las particulas (plano XY)")
-
-show()
 print "Tiempo de simulacion= {:.2f}s".format(time.time() - start_time)
+show()
