@@ -18,17 +18,12 @@ rho_agua = 1000. *_kg/(_m**3)		#densidad del agua
 rho_particula = 2650. *_kg/(_m**3)	#densidad de las particulas
 
 #condiciones iniciales
-data = load("initial_condition.npz")
-Nparticulas = data["Nparticulas"]
+Nparticulas = 20
 x0 = 100*d*rand(Nparticulas)
 y0 = 30*d*rand(Nparticulas) + d
 vx0 = rand(Nparticulas)/2
 vy0 = rand(Nparticulas)/2
 
-#x0 =  data["x0"]
-#y0 =  data["y0"]
-#vx0 = data["vx0"]
-#vy0 = data["vy0"]
 print "El numero de particulas en simulacion es = ", Nparticulas
 
 #recursos para el transcurso de la simulacion
