@@ -36,3 +36,10 @@ tmax = 0.5*_s		#tiempo maximo de simulacion
 ti = 0. * _s 	#tiempo actual
 </pre>
 Con un tiempo de simulación de 14.91s
+
+Sin embargo, tener pasos de tiempos altos significa que las curvas de las trayectorias de las partículas serán menos reales debido a que tendrán menos datos de las posiciones de ellas. Por ejemplo, se implementó el código para 10 partículas con un paso de tiempo de 0.0001s y 0.001s, como se puede ver en los próximos gráficos:
+
+- Gráfico con paso de tiempo de 0.0001s
+![](https://github.com/nicolasilvac/MCOC-Proyecto-2/blob/master/%5BEntrega%204%5D/%5BNicol%C3%A1s%20Silva%5D/dt_menor.png)
+- Gráfico con paso de tiempo de 0.001s
+![](https://github.com/nicolasilvac/MCOC-Proyecto-2/blob/master/%5BEntrega%204%5D/%5BNicol%C3%A1s%20Silva%5D/dt_mayor.png)
