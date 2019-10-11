@@ -3,18 +3,18 @@
 
 El objetivo de esta entrega es poder simular el transporte de sedimentos de fondo en base a un método lagrangiano, en esta oportunidad se simuló para 2, 5, 10 y 20 partículas. Para ello se consideraron fuerzas del peso propio de la partícula, drag y liftting, para las cuales se consideraron los siguientes parámetros:
 
-### Físicos y Geométricos
+#### Físicos y Geométricos
 - Densidad de la partícula de sedimento 2650 kg/m3 (suelo mineral)
 - Densidad del agua 1000 kg/m3
 - Diámetro de la partícula de sedimento de 1 mm
 
-### La posición y velocidad inicial se utilizó el método siguiente:
+#### La posición y velocidad inicial se utilizó el método siguiente:
 x0 = 100*d*rand(Nparticulas)
 y0 = 30*d*rand(Nparticulas) + d
 vx0 = rand(Nparticulas)/2
 vy0 = rand(Nparticulas)/2
 
-### Los coeficientes para utilizar las fórmulas de fuerzas
+#### Los coeficientes para utilizar las fórmulas de fuerzas
 - Constante de drag = 0.47 (partícula esférica)
 - Constante de lifting = 0.2
 - u_estrella = 0.14
