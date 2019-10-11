@@ -14,22 +14,22 @@ _gr = 1e-3*_kg
 _in = 2.54*_cm
 
 #parametros fisicos
-g = 9.81*_m/_s**2 		#Fuerza gravedad
+g = 9.81*_m/_s**2 			#Fuerza gravedad
 rho_agua = 1000. *_kg/(_m**3) 		#Densidad del agua
 rho_particula = 2650. *_kg/(_m**3) 	#Densidad de la particula
 
 #transcurso del tiempo
-dt = 0.001*_s	#paso de tiempo
+dt = 0.001*_s		#paso de tiempo
 tmax = 2*_s		#tiempo maximo de simulacion
-ti = 0. * _s 	#tiempo actual
+ti = 0. * _s 		#tiempo actual
 t = arange(0, tmax, dt)
 Nt = len(t)
 
 #parametros geometricos y peso
 d = 1*_mm 				#Diametro de la particula
-A = pi*(d/2)**2 		#Area Particula
-V = (4./3.)*pi*(d/2)**3 #Volumen Particula
-m = rho_particula*V 	#Masa particula
+A = pi*(d/2)**2 			#Area Particula
+V = (4./3.)*pi*(d/2)**3 		#Volumen Particula
+m = rho_particula*V 			#Masa particula
 
 #condiciones iniciales de las particulas
 Nparticulas = 20
