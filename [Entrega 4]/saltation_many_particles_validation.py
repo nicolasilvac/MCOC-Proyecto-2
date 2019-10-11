@@ -13,17 +13,22 @@ _in = 2.54 *_cm
 
 #parametros fisicos
 g = 9.81* _m/_s**2
-d = 1 * _mm
+d = 0.4 * _mm
 rho_agua = 1000. *_kg/(_m**3)		#densidad del agua
 rho_particula = 2650. *_kg/(_m**3)	#densidad de las particulas
 
 #condiciones iniciales
 data = load("initial_condition.npz")
-x0 =  data["x0"]
-y0 =  data["y0"]
-vx0 = data["vx0"]
-vy0 = data["vy0"]
 Nparticulas = data["Nparticulas"]
+x0 = 100*d*rand(Nparticulas)
+y0 = 30*d*rand(Nparticulas) + d
+vx0 = rand(Nparticulas)/2
+vy0 = rand(Nparticulas)/2
+
+#x0 =  data["x0"]
+#y0 =  data["y0"]
+#vx0 = data["vx0"]
+#vy0 = data["vy0"]
 print "El numero de particulas en simulacion es = ", Nparticulas
 
 #recursos para el transcurso de la simulacion
@@ -73,7 +78,6 @@ k_penal = 0.5*Cd*rho_agua*A*norm(vfx)**2/(d/20)		#lo que penaliza por choques en
 #movimiento de la particula
 def particula(z,t):
 	zp = zeros(4*Nparticulas)
-
 	for i in range(Nparticulas):
 		di = d
 		xi = z[4*i:4*i+2]
