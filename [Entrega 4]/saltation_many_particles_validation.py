@@ -2,6 +2,7 @@
 from matplotlib.pylab import * 
 from scipy.integrate import odeint
 import time
+import random
 start_time = time.time()
 
 #unidades base son SI (m, kg, s)
@@ -14,25 +15,25 @@ _gr = 1e-3*_kg
 _in = 2.54*_cm
 
 #parametros fisicos
-g = 9.81*_m/_s**2 			#Fuerza gravedad
+g = 9.81*_m/_s**2 		#Fuerza gravedad
 rho_agua = 1000. *_kg/(_m**3) 		#Densidad del agua
 rho_particula = 2650. *_kg/(_m**3) 	#Densidad de la particula
 
 #transcurso del tiempo
-dt = 0.001*_s		#paso de tiempo
-tmax = 2*_s		#tiempo maximo de simulacion
-ti = 0. * _s 		#tiempo actual
+dt = 0.001*_s	#paso de tiempo
+tmax = 0.5*_s		#tiempo maximo de simulacion
+ti = 0. * _s 	#tiempo actual
 t = arange(0, tmax, dt)
 Nt = len(t)
 
 #parametros geometricos y peso
 d = 1*_mm 				#Diametro de la particula
-A = pi*(d/2)**2 			#Area Particula
-V = (4./3.)*pi*(d/2)**3 		#Volumen Particula
-m = rho_particula*V 			#Masa particula
+A = pi*(d/2)**2 		#Area Particula
+V = (4./3.)*pi*(d/2)**3 #Volumen Particula
+m = rho_particula*V 	#Masa particula
 
 #condiciones iniciales de las particulas
-Nparticulas = 20
+Nparticulas = 5
 x0 = 100*d*rand(Nparticulas)
 y0 = 30*d*rand(Nparticulas) + d
 vx0 = rand(Nparticulas)/2
@@ -113,10 +114,10 @@ fig = figure()
 ax= gca()
 for i in range(Nparticulas):
 	xi = z[:, 4*i]
-	yi = z[:, 4*i+1]
+	yi = z[:, 4*i + 1]
 	col = rand(3)
-	plot (xi/d,yi/d, color=col)
-ax.axhline(d/2,color="k",linestyle="--")
+	plot(xi,yi,'--o',color=col)
+ax.axhline(0,color="k",linestyle='dotted')
 plt.xlabel("x/d")
 plt.ylabel("z/d")
 plt.title("Trayectoria de las particulas (plano XY)")
