@@ -113,8 +113,8 @@ print "Fin"
 fig = figure()
 ax= gca()
 for i in range(Nparticulas):
-	xi = z[:, 4*i]
-	yi = z[:, 4*i + 1]
+	xi = z[:, 4*i]/d
+	yi = z[:, 4*i + 1]/d
 	col = rand(3)
 	plot(xi,yi,'--o',color=col)
 ax.axhline(0,color="k",linestyle='dotted')
