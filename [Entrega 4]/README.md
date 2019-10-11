@@ -9,11 +9,14 @@ El objetivo de esta entrega es poder simular el transporte de sedimentos de fond
 - Diámetro de la partícula de sedimento de 1 mm
 
 #### La posición y velocidad inicial se utilizó el método siguiente:
-x0 = 100*d*rand(Nparticulas)
-y0 = 30*d*rand(Nparticulas) + d
-vx0 = rand(Nparticulas)/2
-vy0 = rand(Nparticulas)/2
+<pre>
+  x0 = 100*d*rand(Nparticulas)
+  y0 = 30*d*rand(Nparticulas) + d
+  vx0 = rand(Nparticulas)/2
+  vy0 = rand(Nparticulas)/2
+</pre>
 
+  
 #### Los coeficientes para utilizar las fórmulas de fuerzas
 - Constante de drag = 0.47 (partícula esférica)
 - Constante de lifting = 0.2
