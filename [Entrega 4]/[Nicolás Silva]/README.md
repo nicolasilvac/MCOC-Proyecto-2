@@ -8,10 +8,14 @@
 
 ### Tiempos de simulación
 
-- Para 2 partículas = 0.34s
-- Para 5 partículas = 1.73s
-- Para 10 partículas = 16.05s
-- Para 20 partículas = 200.94s
+- Para 2  partículas =  0.34s
+- Para 3  partículas =  1.03s
+- Para 5  partículas =  1.73s
+- Para 8  partículas =  8.14s
+- Para 10 partículas =  16.05s
+- Para 13 partículas =  40.89s
+- Para 17 partículas =  121.29s
+- Para 20 partículas =  200.94s
 
 ![](https://github.com/nicolasilvac/MCOC-Proyecto-2/blob/master/%5BEntrega%204%5D/%5BNicol%C3%A1s%20Silva%5D/tiempo_simulacion_segun_particulas.png)
 
