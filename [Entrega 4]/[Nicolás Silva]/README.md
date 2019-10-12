@@ -27,7 +27,7 @@ Este ejemplo se verifica al implementarlo en el código para 10 partículas, en 
 <pre>
 #transcurso del tiempo
 dt = 0.001*_s	#paso de tiempo
-tmax = 0.5*_s		#tiempo maximo de simulacion
+tmax = 0.5*_s	#tiempo maximo de simulacion
 ti = 0. * _s 	#tiempo actual
 </pre>
 Con un tiempo de simulación de 16.05s
@@ -36,7 +36,7 @@ Por otro lado, se implementa mismo código pero con un paso de tiempo de 0.005 s
 <pre>
 #transcurso del tiempo
 dt = 0.005*_s	#paso de tiempo
-tmax = 0.5*_s		#tiempo maximo de simulacion
+tmax = 0.5*_s	#tiempo maximo de simulacion
 ti = 0. * _s 	#tiempo actual
 </pre>
 Con un tiempo de simulación de 14.91s
