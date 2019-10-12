@@ -18,8 +18,9 @@
 ### Grafico con un diferencial de tiempo mayor 
 - dt= 0,002 segundos
 - 5 particulas
+![](https://github.com/nicolasilvac/MCOC-Proyecto-2/blob/master/%5BEntrega%204%5D/%5BTomás%20Arteaga%5D/diferencial_Tiempo_Mayor.PNG)
 
 ### Grafico con un diferencial de tiempo menor 
 - dt= 0,0002 segundos
 - 5 particulas
-
+![](
