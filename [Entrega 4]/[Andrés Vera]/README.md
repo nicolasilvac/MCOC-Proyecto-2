@@ -11,4 +11,6 @@
 -	5 partículas = 6.23 segundos
 -	10 partículas = 48.80 segundos
 -	20 partículas  = 422.43 segundos
+
+![Results](https://github.com/nicolasilvac/MCOC-Proyecto-2/blob/master/%5BEntrega%204%5D/%5BAndr%C3%A9s%20Vera%5D/tiempo%20de%20simulacion.png)
  
