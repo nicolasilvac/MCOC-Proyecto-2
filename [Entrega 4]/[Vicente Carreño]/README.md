@@ -12,3 +12,5 @@
 - 5 partículas=1.18s
 - 10 partículas=10.63s
 - 20 partículas=206.3
+
+Imágenes/Especificaciones Computador Vicente Carreño.png
