@@ -42,7 +42,7 @@ El código se basa en iterar la posición en el plano XY de cada partícula, la 
 ### Para 20 partículas:
 ![](https://github.com/nicolasilvac/MCOC-Proyecto-2/blob/master/%5BEntrega%204%5D/%5BGr%C3%A1ficos%5D/simulacion_20.png)
 #### Acercamiento:
-![](https://github.com/nicolasilvac/MCOC-Proyecto-2/blob/master/%5BEntrega%204%5D/%5BGr%C3%A1ficos%5D/simulacion_10_zoom.png)
+![](https://github.com/nicolasilvac/MCOC-Proyecto-2/blob/master/%5BEntrega%204%5D/%5BGr%C3%A1ficos%5D/simulacion_20_zoom.png)
 
 
 ## Rendimiento en General
