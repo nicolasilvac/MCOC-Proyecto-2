@@ -49,10 +49,10 @@ El código se basa en iterar la posición en el plano XY de cada partícula, la 
 Se hizo un promedio del tiempo que la simulación se implementó para los 4 integrantes del grupo para 2, 5, 10 y 20 partículas.
 
 ### Tiempos de simulación
-- Para 2 partículas = 
-- Para 5 partículas = 
-- Para 10 partículas = 
-- Para 20 partículas = 
+- Para 2 partículas = 0.29 segundos
+- Para 5 partículas = 1.43 segundos
+- Para 10 partículas = 11.60 segundos
+- Para 20 partículas = 164.36 segundos
 ![](grafico)
 El cual se puede ver en la figura anterior cómo el gráfico de particulas vs tiempo se acerca a una curva exponencial, es decir, para cuando el número de partículas crece en rangos muy altos, el tiempo de simulación crece considerablemente en relación a cuando el número de partículas crecen en rangos pequeños.
 
