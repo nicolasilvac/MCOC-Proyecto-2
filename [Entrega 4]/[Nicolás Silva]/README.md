@@ -43,3 +43,5 @@ Sin embargo, tener pasos de tiempos altos significa que las curvas de las trayec
 ![](https://github.com/nicolasilvac/MCOC-Proyecto-2/blob/master/%5BEntrega%204%5D/%5BNicol%C3%A1s%20Silva%5D/dt_menor.png)
 - Gráfico con paso de tiempo de 0.001s
 ![](https://github.com/nicolasilvac/MCOC-Proyecto-2/blob/master/%5BEntrega%204%5D/%5BNicol%C3%A1s%20Silva%5D/dt_mayor.png)
+
+Se puede ver que la saturación de partículas del primer gráfico es mayor ya que las curvas tienen más pares ordenados de las posiciones de las partículas ya que cada un menor tiempo se calcula la posición. Sin embargo, colocar un paso de tiempo muy pequeño, además de hacer más lenta la simulación, puede que no sea necesario tener una gran cantidad posiciones ya que cada par ordenado estará muy cercano al anterior y siguiente. 
