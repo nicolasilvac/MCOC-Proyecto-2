@@ -1,5 +1,4 @@
-# Presentación Resultados Nicolás Silva
-## Rendimiento del Programa
+## Rendimiento del Programa Nicolás Silva
 ### Especificaciones del Computador
 - Marca: Sony
 - Procesador: Intel Core i5-2430M de 2.40GHz
