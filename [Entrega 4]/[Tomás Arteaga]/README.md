@@ -12,7 +12,7 @@
 -	20 partículas  = 85.83 segundos
 
 ## Grafico Tiempo de Simulación
-¡[]( https://github.com/nicolasilvac/MCOC-Proyecto-2/blob/master/%5BEntrega%204%5D/%5BTomás%20Arteaga%5D/Tiempo_de_simulacion.PNG)
+![]( https://github.com/nicolasilvac/MCOC-Proyecto-2/blob/master/%5BEntrega%204%5D/%5BTomás%20Arteaga%5D/Tiempo_de_simulacion.PNG)
 
 
 ### Grafico con un diferencial de tiempo mayor 
