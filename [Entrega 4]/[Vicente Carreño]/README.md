@@ -13,4 +13,4 @@
 - 10 partículas=10.63s
 - 20 partículas=206.3
 
-![](https://https://github.com/nicolasilvac/MCOC-Proyecto-2/blob/master/%5BEntrega%204%5D/%5BVicente%20Carre%C3%B1o%5D/Im%C3%A1genes/Foto%20Simulaci%C3%B3n%202%20Particulas.png)
+([Entrega 4]/[Vicente Carreño]/Imágenes/Foto Simulación 2 Particulas.png)
