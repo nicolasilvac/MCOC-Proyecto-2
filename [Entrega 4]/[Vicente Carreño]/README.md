@@ -14,3 +14,9 @@
 - 20 partículas=206.3
 
 ![Gráfico 2 Párticulas](https://github.com/nicolasilvac/MCOC-Proyecto-2/blob/master/%5BEntrega%204%5D/%5BVicente%20Carre%C3%B1o%5D/Im%C3%A1genes/Foto%20Simulaci%C3%B3n%202%20Particulas.png)
+
+![Gráfico 5 Párticulas] (https://github.com/nicolasilvac/MCOC-Proyecto-2/blob/master/%5BEntrega%204%5D/%5BVicente%20Carre%C3%B1o%5D/Im%C3%A1genes/Foto%20Simulaci%C3%B3n%205%20Particulas.png)
+
+![Gráfico 10 Párticulas] (https://github.com/nicolasilvac/MCOC-Proyecto-2/blob/master/%5BEntrega%204%5D/%5BVicente%20Carre%C3%B1o%5D/Im%C3%A1genes/Foto%20Simulaci%C3%B3n%2010%20Particulas.png)
+
+![Gráfico 20 Párticulas] (https://github.com/nicolasilvac/MCOC-Proyecto-2/blob/master/%5BEntrega%204%5D/%5BVicente%20Carre%C3%B1o%5D/Im%C3%A1genes/Foto%20Simulaci%C3%B3n%2020%20particulas.png)
