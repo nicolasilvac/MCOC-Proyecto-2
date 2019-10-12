@@ -13,4 +13,4 @@
 - 10 partículas=10.63s
 - 20 partículas=206.3
 
-([Entrega 4]/[Vicente Carreño]/Imágenes/Foto Simulación 2 Particulas.png)
+[Entrega 4]/[Vicente Carreño]/Imágenes/Foto Simulación 2 Particulas.png
