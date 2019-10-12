@@ -1,4 +1,3 @@
-
 from matplotlib.pylab import * 
 from scipy.integrate import odeint
 import time
@@ -21,7 +20,7 @@ rho_particula = 2650. *_kg/(_m**3) 	#Densidad de la particula
 
 #transcurso del tiempo
 dt = 0.001*_s	#paso de tiempo
-tmax = 0.5*_s		#tiempo maximo de simulacion
+tmax = 2*_s		#tiempo maximo de simulacion
 ti = 0. * _s 	#tiempo actual
 t = arange(0, tmax, dt)
 Nt = len(t)
@@ -33,7 +32,7 @@ V = (4./3.)*pi*(d/2)**3 #Volumen Particula
 m = rho_particula*V 	#Masa particula
 
 #condiciones iniciales de las particulas
-Nparticulas = 5
+Nparticulas = 2
 x0 = 100*d*rand(Nparticulas)
 y0 = 30*d*rand(Nparticulas) + d
 vx0 = rand(Nparticulas)/2
@@ -110,7 +109,7 @@ z = odeint(particula, z0, t)
 print "Fin"
 
 #codigo para plotear
-fig = figure()
+figure()
 ax= gca()
 for i in range(Nparticulas):
 	xi = z[:, 4*i]/d
@@ -121,5 +120,19 @@ ax.axhline(0,color="k",linestyle='dotted')
 plt.xlabel("x/d")
 plt.ylabel("z/d")
 plt.title("Trayectoria de las particulas (plano XY)")
+
+figure()
+for i in range(Nparticulas):
+	xi = z[:, 4*i]/d
+	yi = z[:, 4*i + 1]/d
+	col = rand(3)
+	subplot(2,1,1)
+	plot(t,xi/1000,'--o',color=col)
+	plt.ylabel("x(t) (m)")
+	plt.title("Trayectoria de las particulas")
+	subplot(2,1,2)
+	plot(t,yi/1000,'--o',color=col)	
+	plt.ylabel("y(t) (m)")
+
 print "Tiempo de simulacion= {:.2f}s".format(time.time() - start_time)
 show()
