@@ -46,7 +46,7 @@ El código se basa en iterar la posición en el plano XY de cada partícula, la 
 
 
 ## Rendimiento en General
-Se hizo un promedio del tiempo que la simulación se implementó para los 4 integrantes del grupo para 2, 5, 10 y 20 partículas, el cual fue el siguiente:
+Se hizo un promedio del tiempo que la simulación se implementó para los 4 integrantes del grupo para 2, 5, 10 y 20 partículas.
 
 ### Tiempos de simulación
 - Para 2 partículas = 
