@@ -6,3 +6,4 @@
 - Tipo de Sistema: Sistema Operativo de 64 bits, procesador x64r
 - Edicion: Windows 8.1 Single lenguage
 ## Tiempo de Simulación
+- 1 particula: 
