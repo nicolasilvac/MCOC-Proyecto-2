@@ -9,7 +9,7 @@ reuse_initial_condition=True
 #reuse_initial_condition=False
 doit=True
 #doit=False
-start_time = time.time()
+Inicio= time.time()
 tiempo_bloque_1=0
 tiempo_bloque_2=0
 t=arange(0,tmax,dt)
@@ -19,7 +19,7 @@ fout=open("resultados.txt","w")
 
 if reuse_initial_condition:
 	print "Reusing initial conditions"
-	data = load("initial condition.npz")
+	data = load("initial_conditions.npz")
 	x0=data["x0"]
 	y0=data["y0"]
 	vx0=data["vx0"]
@@ -30,7 +30,7 @@ else:
 	itry=1
 	while True:
 		dmin=infty
-		x0=800¨d*rand(Nparticulas)
+		x0=800*d*rand(Nparticulas)
 		y0=5*d*rand(Nparticulas) + 1*d
 		for i in range(Nparticulas):
 			xi,yi=x0[i],y0[i]
@@ -62,7 +62,7 @@ zk[3::4]=vy0
 #print Nt
 #exit(0)
 done=zeros(Nparticulas,dtype=int32)
-imptacting_set = zeros(Nparticulas,dtype=int32)
+impacting_set = zeros(Nparticulas,dtype=int32)
 
 print "Integrating"
 k=0
@@ -109,7 +109,7 @@ if doit:
 						zk_j = zk[jrange]
 						zk_all=hstack((zk_all,zk_j))
 					ti=time.time()
-					zkm1_all=odeint(zp_M_Particulas, zk_all, [dt*k,dt*(k+1)],args=(M,))
+					zkm1_all=odeint(zp_M_particulas, zk_all, [dt*k,dt*(k+1)],args=(M,))
 					zkm1[irange]=zkm1_all[1,0:4]
 					tf=time.time()
 					tiempo_bloque_1+=tf-ti
@@ -120,37 +120,38 @@ if doit:
 						done[i]=1
 						pos_j+=1
 				else:
-					zkm1_i=odeint(zp_una_Particulas,zk_i,[dt*k,dt*(k+1)])
+					zkm1_i=odeint(zp_una_particula,zk_i,[dt*k,dt*(k+1)])
 					zkm1[irange]=zkm1_i[1,0:4]
 					done[i]=1
 		zk=zkm1
 		k+=1
 fout.close()
 
+Final=time.time()
+
+print tiempo_bloque_1
+print tiempo_bloque_2
+print 'Tiempo Total:', Final - Inicio
 
 
 
 
 
-
-
-
-
-print "Integrando"
-z = odeint(particula, z0, t)
-print "Fin"
-
-#codigo para plotear
-fig = figure()
-ax= gca()
-for i in range(Nparticulas):
-	xi = z[:, 4*i]/d
-	yi = z[:, 4*i + 1]/d
-	col = rand(3)
-	plot(xi,yi,'--o',color=col)
-ax.axhline(0,color="k",linestyle='dotted')
-plt.xlabel("x/d")
-plt.ylabel("z/d")
-plt.title("Trayectoria de las particulas (plano XY)")
-print "Tiempo de simulacion= {:.2f}s".format(time.time() - start_time)
-show()
+#print "Integrando"
+#z = odeint(particula, z0, t)
+#print "Fin"
+#
+##codigo para plotear
+#fig = figure()
+#ax= gca()
+#for i in range(Nparticulas):
+#	xi = z[:, 4*i]/d
+#	yi = z[:, 4*i + 1]/d
+#	col = rand(3)
+#	plot(xi,yi,'--o',color=col)
+#ax.axhline(0,color="k",linestyle='dotted')
+#plt.xlabel("x/d")
+#plt.ylabel("z/d")
+#plt.title("Trayectoria de las particulas (plano XY)")
+#print "Tiempo de simulacion= {:.2f}s".format(time.time() - start_time)
+#show()
