@@ -3,7 +3,7 @@ import time
 import h5py
 
 #Numero de particulas
-Nparticulas = 3	
+Nparticulas = 2	
 
 #Unidades base son SI (m, kg, s)
 _m = 1.
@@ -184,9 +184,9 @@ def zp_choque_M_particulas(z,t,M):
 
 
 reuse_initial_condition=True
-#reuse_initial_condition=False
+
 doit=True
-#doit=False
+
 Inicio= time.time()
 tiempo_bloque_1=0
 tiempo_bloque_2=0
@@ -239,10 +239,8 @@ zk[3::4]=vy0
 
 
 #pasar los datos a binario con hdf5 para optimizacion de memoria
-fout = h5py.File("Resultados.hdf5", "w")
-
-fout_parametros = fout.create_group("parametros")
-
+fout = h5py.File("binario_hdf5", "w")
+fout_parametros = fout.create_group("Parametros")
 fout_parametros["dt"] = dt
 fout_parametros["g"] = g
 fout_parametros["d"] = d
@@ -264,10 +262,10 @@ fout_parametros["A"] = A
 fout_parametros["k_penal"] = k_penal
 fout_z = fout.create_dataset("z",(Nt, 1+ 4*Nparticulas), dtype=double)
 
-done=zeros(Nparticulas,dtype=int32)
-impacting_set = zeros(Nparticulas,dtype=int32)
+done=zeros(Nparticulas, dtype=int32)
+impacting_set = zeros(Nparticulas, dtype=int32)
 
-print "Integrating"
+print "Integrando"
 k=0
 
 if doit:
@@ -283,7 +281,6 @@ if doit:
 
 		if k % 100==0:
 			print "k={} t= {}".format(k,k*dt)
-		#zk=z[k,:]
 		done *= 0
 
 		#guarda el tiempo y los suma para el bloque de particulas que chocan
@@ -333,29 +330,26 @@ if doit:
 
 		zk=zkm1
 		k+=1
-fout.close()
 
 Final = time.time()
-
+fout.close()
 print 'Tiempo bloque 1, particulas que no chocan= ',tiempo_bloque_1
 print 'Tiempo bloque 2, particulas que chocan= ',tiempo_bloque_2
 print 'Tiempo Total:', Final - Inicio
 
 
-with h5py.File("Resultados.hdf5", 'r') as f:
+with h5py.File("binario_hdf5", 'r') as f:
     print("Keys: %s" % f.keys())
     a_group_key = list(f.keys())[1]
-
-    # Get the data
     data = list(f["z"])
 
-d = 0.15e-3 #pegado
+d = 0.15e-3 
 
 Nparticulas = (len(data[0]) -1) /4
 
 figure()
 
-#color = "006B93"
+color = "006B93"
 ax = gca()
 colorlist = []
 xi =[]
