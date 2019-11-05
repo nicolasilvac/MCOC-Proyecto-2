@@ -381,6 +381,7 @@ else:
 plt.set_title(titulo)
 tight_layout()
 
-
+nombre_png = 'Grafico {} particulas'.format(Nparticulas)
+savefig(nombre_png)
 
 show()
