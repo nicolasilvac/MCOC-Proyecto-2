@@ -2,6 +2,9 @@ from matplotlib.pylab import *
 import time
 import h5py
 
+#Numero de particulas
+Nparticulas = 3	
+
 #Unidades base son SI (m, kg, s)
 _m = 1.
 _kg = 1.
@@ -17,8 +20,8 @@ rho_agua = 1000.*_kg/(_m**3)		# Densidad del agua
 rho_particula = 2650.*_kg/(_m**3)	# Densidad de las particulillas
 
 #transcurso del tiempo
-dt = 0.0001*_s    	# paso de tiempo 
-tmax = 1*_s      # tiempo maximo de simulacion
+dt = 0.00001*_s    	# paso de tiempo 
+tmax = 0.1*_s      # tiempo maximo de simulacion
 
 #parametros geometricos y peso
 d = 0.15*_mm
@@ -36,7 +39,6 @@ ustar = 0.14	#  (m/s)  0.14 - 0.23 usestrella
 alpha = 1/(1 + R + Cm)			
 tau_star = 0.067   # Tau star (Shear stress)
 
-Nparticulas = 3	#Numero de particulas
 
 #Directores
 ihat = array([1,0])			# itongo
@@ -66,7 +68,7 @@ def velocity_field(x):
 vfx = velocity_field([0, 10*d])[0]
 A = pi*(d/2)**2
 k_penal = 0.5*Cd*rho_agua*A*norm(vfx)**2/(d/20)
-from Funciones import *
+
 norm = lambda v: sqrt(dot(v,v))
 
 def propiedades_area_volumen_masa(d):
@@ -80,10 +82,8 @@ def fuerzas_hidrodinamicas(x,v,d,area,masa):
 	xtop = x + (d/2)*jhat
 	xbot = x - (d/2)*jhat
 	vf = velocity_field(x + 0*jhat)
-
 	vrelf_top = abs(velocity_field(xtop)[0])
 	vrelf_bot = abs(velocity_field(xbot)[0])
-
 	vrel = vf - v
 
 	Cd = 0.47
@@ -237,6 +237,8 @@ zk[1::4]=y0
 zk[2::4]=vx0
 zk[3::4]=vy0
 
+
+#pasar los datos a binario con hdf5 para optimizacion de memoria
 fout = h5py.File("Resultados.hdf5", "w")
 
 fout_parametros = fout.create_group("parametros")
@@ -335,7 +337,51 @@ fout.close()
 
 Final = time.time()
 
-print tiempo_bloque_1
-print tiempo_bloque_2
+print 'Tiempo bloque 1, particulas que no chocan= ',tiempo_bloque_1
+print 'Tiempo bloque 2, particulas que chocan= ',tiempo_bloque_2
 print 'Tiempo Total:', Final - Inicio
 
+
+with h5py.File("Resultados.hdf5", 'r') as f:
+    print("Keys: %s" % f.keys())
+    a_group_key = list(f.keys())[1]
+
+    # Get the data
+    data = list(f["z"])
+
+d = 0.15e-3 #pegado
+
+Nparticulas = (len(data[0]) -1) /4
+
+figure()
+
+#color = "006B93"
+ax = gca()
+colorlist = []
+xi =[]
+yi =[]
+
+for i in range(Nparticulas):
+	for j in range(len(data)-1):
+
+		xi.append(data[j][1 + 4*i] / d)
+		yi.append(data[j][1 + 4*i + 1] / d)
+	
+	col=rand(3)
+	colorlist.append(col)
+	ax.plot(xi[0::100],yi[0::100],"o",color=col)
+	ax.plot(xi,yi,"--",color=col,alpha=0.5)
+	xi = []
+	yi = []
+
+ax.set_ylim([0,5])
+ax.axhline(0.,color="k",linestyle="--")
+ax.axhline(1/30.,color="gray",linestyle="--")
+ax.set_xlabel("${x}/{d}$")
+ax.set_ylabel("${z}/{d}$")
+
+tight_layout()
+
+
+
+show()
