@@ -3,7 +3,7 @@ import time
 import h5py
 
 #Numero de particulas
-Nparticulas = 2	
+Nparticulas = 1	
 
 #Unidades base son SI (m, kg, s)
 _m = 1.
@@ -183,7 +183,7 @@ def zp_choque_M_particulas(z,t,M):
 	return zp
 
 
-reuse_initial_condition=True
+reuse_initial_condition=False
 
 doit=True
 
@@ -350,30 +350,35 @@ Nparticulas = (len(data[0]) -1) /4
 figure()
 
 color = "006B93"
-ax = gca()
+plt = gca()
 colorlist = []
 xi =[]
 yi =[]
 
+#para cada particula
 for i in range(Nparticulas):
+	#para cada particula guarda la trayectoria
 	for j in range(len(data)-1):
-
 		xi.append(data[j][1 + 4*i] / d)
 		yi.append(data[j][1 + 4*i + 1] / d)
 	
-	col=rand(3)
+	col=rand(4)
 	colorlist.append(col)
-	ax.plot(xi[0::100],yi[0::100],"o",color=col)
-	ax.plot(xi,yi,"--",color=col,alpha=0.5)
+	plt.plot(xi[0::100],yi[0::100],"o",color=col)
+	plt.plot(xi,yi,"--",color=col,alpha=0.6)
 	xi = []
 	yi = []
 
-ax.set_ylim([0,5])
-ax.axhline(0.,color="k",linestyle="--")
-ax.axhline(1/30.,color="gray",linestyle="--")
-ax.set_xlabel("${x}/{d}$")
-ax.set_ylabel("${z}/{d}$")
-
+plt.set_ylim([0,8])
+plt.axhline(0.,color="k",linestyle="--")
+plt.axhline(1/30.,color="gray",linestyle="--")
+plt.set_xlabel("${x}/{d}$")
+plt.set_ylabel("${z}/{d}$")
+if Nparticulas == 1:
+	titulo = 'TRAYECTORIA DE {} PARTICULA'.format(Nparticulas)
+else:
+	titulo = 'TRAYECTORIA DE {} PARTICULAS'.format(Nparticulas)
+plt.set_title(titulo)
 tight_layout()
 
 
