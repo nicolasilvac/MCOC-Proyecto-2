@@ -1,11 +1,188 @@
 from matplotlib.pylab import * 
-
-#
-from Parametros import *
-from Funciones import *
-
 import time
 import random
+
+
+#Unidades base son SI (m, kg, s)
+_m = 1.
+_kg = 1.
+_s = 1.
+_mm = 1e-3*_m
+_cm = 1e-2*_m
+_gr = 1e-3*_kg
+_in = 2.54*_cm
+
+#parametros fisicos
+g = 9.81*_m/_s**2
+rho_agua = 1000.*_kg/(_m**3)		# Densidad del agua
+rho_particula = 2650.*_kg/(_m**3)	# Densidad de las particulillas
+
+#transcurso del tiempo
+dt = 0.0001*_s    	# paso de tiempo 
+tmax = 1*_s      # tiempo maximo de simulacion
+
+#parametros geometricos y peso
+d = 0.15*_mm
+A = pi*(d/2)**2 		#Area Particula
+V = (4./3.)*pi*(d/2)**3 #Volumen Particula
+m = rho_particula*V 	#Masa particula
+
+#coeficientes para formula
+Cd = 0.47    #Coeficiente de arrastre
+Cm = 0.5	#Masa adicional
+CL = 0.2	#Coeficiente de lift
+Rp = 73.  
+R = (rho_particula/rho_agua - 1)  
+ustar = 0.14	#  (m/s)  0.14 - 0.23 usestrella
+alpha = 1/(1 + R + Cm)			
+tau_star = 0.067   # Tau star (Shear stress)
+
+Nparticulas = 3	#Numero de particulas
+
+#Directores
+ihat = array([1,0])			# itongo
+jhat = array([0,1])			# jotatongo
+norm=lambda v: sqrt(dot(v,v))
+
+tau_cr = 0.22*Rp**(-0.6)+0.06*10**(-7*Rp**(-0.6))   # tau critico
+ustar = sqrt(tau_star * g * Rp * d)		# uestrella de verdad ahora si final final ok para siempre
+
+print "tau_star = ", tau_star
+print "tau_cr = ", tau_cr
+print "tau_star/tau_cr = ", tau_star/tau_cr
+print "ustar = ", ustar
+
+def velocity_field(x):
+	z = x[1] / d
+	# z = x[1] 
+	if z > 1/30.:
+		uf = ustar*log(30.*z)/0.41
+		uf = uf * (uf > 0)
+	else:
+		uf = 0
+
+	return array([uf,0])
+
+# estimar k_penal.... 
+vfx = velocity_field([0, 10*d])[0]
+A = pi*(d/2)**2
+k_penal = 0.5*Cd*rho_agua*A*norm(vfx)**2/(d/20)
+from Funciones import *
+norm = lambda v: sqrt(dot(v,v))
+
+def propiedades_area_volumen_masa(d):
+	area= pi * (d/2) ** 2
+	vol = (4./3.) * pi * (d/2) ** 3
+	masa = rho_particula * vol
+	return area, vol, masa
+
+def fuerzas_hidrodinamicas(x,v,d,area,masa):
+
+	xtop = x + (d/2)*jhat
+	xbot = x - (d/2)*jhat
+	vf = velocity_field(x + 0*jhat)
+
+	vrelf_top = abs(velocity_field(xtop)[0])
+	vrelf_bot = abs(velocity_field(xbot)[0])
+
+	vrel = vf - v
+
+	Cd = 0.47
+	fD = (0.5*Cd*alpha*rho_agua*norm(vrel)*area)*vrel
+
+	fL = (0.5*CL*alpha*rho_agua*(vrelf_top - vrelf_bot)*area)*vrel[0]*jhat
+	fW = (-masa*g)*jhat
+
+	Fh = fW + fD + fL
+
+	return Fh
+
+def fuerza_impacto_suelo(x,v,d):
+	N = around(x[0]/d)
+	r = x - (N * d) * ihat
+	delta = norm(r)- d
+	if delta < 0:
+		n = r/ norm(r)
+		Fi = -k_penal * delta * n
+	else:
+		Fi = 0. * r 
+	return Fi
+
+def zp_una_particula(z,t,d=d):
+	zp = zeros(4)
+
+	x = z[0:2]
+	v = z[2:4]
+
+	area, vol, masa = propiedades_area_volumen_masa(d)
+	Fh = fuerzas_hidrodinamicas(x,v,d,area,masa)
+	Fi = fuerza_impacto_suelo(x,v,d)
+
+	sumaF = Fh + Fi
+
+	zp[0:2] = v
+	zp[2:4] = sumaF/masa
+
+	return zp
+
+def zp_todas_las_particulas(z,t):
+	zp = zeros(4 * Nparticulas)
+
+	for i in range(Nparticulas):
+		di = d
+		xi = z[4 * i: (4 * i + 2)]
+		vi = z[4 * i + 2 : (4*i +4)]
+
+		area,vol,masa = propiedades_area_volumen_masa(d)
+		Fh = fuerzas_hidrodinamicas(x,v,d,area,masa)
+		Fi = fuerza_impacto_suelo(x,v,d)
+
+		sumaF = Fh + Fi
+
+		zp[4*i:(4*i+2)] = vi
+		zp[4*i+2:(4*i+4)] = sumaF/masa   # decia m
+
+	zp += zp_choque_M_particula(z,t,M = Nparticulas)
+
+	return zp
+
+
+def zp_M_particulas(z,t,M):
+	zp = zeros(4*M)
+
+	for i in range(M):
+		di = d
+		zi = z[4*i:(4*i+4)]
+		vi = z[4*i+2:(4*i+4)]
+
+		zp[4*i:(4*i+4)] = zp_una_particula(zi,t,di)
+
+	zp += zp_choque_M_particula(z,t,M=M)
+
+	return z|p
+
+
+def zp_choque_M_particulas(z,t,M):
+	zp = zeros(4*M)
+	for i in range(M):
+		xi = z[4*i:(4*i+2)]
+		di = d
+		area_i,vol_i,masa_i = propiedades_area_vol_masa(di)
+		for j in range(i+1,M):
+			xj = z[4*j:(4*j+2)]
+			dj = d
+			rij = xj - xi
+			norm_rij = norm(rij)
+			if norm_rij < 0.5*(di+dj):
+				area_j,vol_j,masa_j = propiedades_area_vol_masa(dj)
+				delta = 0.5 * (di+dj) - norm_rij
+				nij = rij / norm_rij
+				Fj = k_penal * delta * nij
+				Fi = -Fj
+				zp[4*i+2:(4*i-4)] += Fi/masa_i
+				zp[4*j+2:(4*j+4)] += Fj/masa_j
+	return zp
+
 
 reuse_initial_condition=True
 #reuse_initial_condition=False
@@ -86,11 +263,8 @@ fout_parametros["jhat"] = jhat
 fout_parametros["tau_cr"] = tau_cr
 fout_parametros["A"] = A
 fout_parametros["k_penal"] = k_penal
-
-
 fout_z = fout.create_dataset("z",(Nt, 1+ 4*Nparticulas), dtype=double)
-#print Nt
-#exit(0)
+
 done=zeros(Nparticulas,dtype=int32)
 impacting_set = zeros(Nparticulas,dtype=int32)
 
