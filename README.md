@@ -16,7 +16,7 @@ Se implementará y validará un modelo de simulación de transporte de sedimento
 - [Entrega 3]: Código donde se implementa el código para una partícula. :heavy_check_mark:
 - [Entrega 4]: Código donde se implementa el código para múltiples partículas :heavy_check_mark:
 - [Entrega 5]: Reunirse con el profesor para ver una mejora en la implementación del código.:heavy_check_mark:
-- [Entrega 6]: Idem [Entrega 4]
+- [Entrega 6]: Idem [Entrega 4] con programa optimizado.
 - [Entrega Final]: Presentar los resultados en un video subido a YouTube.
 
 ## Información adicional
