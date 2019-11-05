@@ -1,7 +1,6 @@
 from matplotlib.pylab import *
 from parameters import *
 
-#15:50 video
 
 norm = lambda v: sqrt(dot(v,v))
 
@@ -42,11 +41,6 @@ def fuerza_impacto_suelo(x,v,d):
 	else:
 		Fi = 0. * r 
 	return Fi
-
-	# delta = x[1]-d/2
-	# if delta < 0:
-	#	Fi += -k_penal*delta*jhat
-	# return Fi
 
 
 
