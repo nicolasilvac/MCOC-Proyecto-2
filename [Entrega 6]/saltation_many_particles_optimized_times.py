@@ -59,6 +59,7 @@ title("Grafico T Bloque 2 vs Numero de particulas",size=10)
 ylabel("Tiempo [s]")
 xlabel("Numero de particulas")
 yticks(Tiempos_bloque_2)
+savefig('Grafico Tiempos Bloques')
 
 figure()
 plot(Nparticulas,Tiempos_Final)
@@ -66,6 +67,11 @@ title("Grafico T Final vs Numero de particulas",size=10)
 ylabel("Tiempo [s]")
 xlabel("Numero de particulas")
 yticks(Tiempos_Final)
+
+savefig('Grafico Tiempo Final')
+
+show()
+
 
 
 show()
