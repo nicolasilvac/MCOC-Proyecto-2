@@ -31,11 +31,11 @@ Se hizo un promedio del tiempo que la simulación se implementó para los 4 inte
 A continuación, se muestran en los gráficos tiempo vs numero de particulas, los tiempos promedios de los 4 integrantes del grupo, en primera ocasión se muestran los gráficos de:
 - Bloque 1: Particulas que no colisionan
 - Bloque 2: Particulas que colisionan
-![](link)
+![](https://github.com/nicolasilvac/MCOC-Proyecto-2/blob/master/%5BEntrega%206%5D/Gr%C3%A1ficos/Grafico%20Tiempos%20Bloques.png)
 
 Y en segunda ocasión se muestra el gráfico tiempo vs numero de particulas del total del tiempo de todas las particulas.
 
-![](link)
+![](https://github.com/nicolasilvac/MCOC-Proyecto-2/blob/master/%5BEntrega%206%5D/Gr%C3%A1ficos/Grafico%20Tiempo%20Final.png)
 
 El gráfico al que se pudo llegar para la Entrega 4 es el siguiente:
 
