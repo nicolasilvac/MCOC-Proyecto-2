@@ -32,6 +32,14 @@ tiempo_40_bloque2=174.791992903\
 tiempo_50_bloque2=221.917994261\
 tiempo_100_bloque2=618.565001726
 
+El siguiente gráfico presenta los tiempos para cada bloque por separado, y la diferencia de tiempos en función de la cantidad de partículas.
+
+![Gráficos de Tiempo por bloques vs Número de Partículas](https://github.com/nicolasilvac/MCOC-Proyecto-2/blob/master/%5BEntrega%206%5D/%5BVicente%20Carre%C3%B1o%5D/Graficos%20de%20bloques%20vs%20numero%20de%20particulas.png)
+
+El siguiente gráfico presenta el tiempo total en función de la cantidad de partículas.
+
+![Gráficos de Tiempo total vs Número de Partículas](https://github.com/nicolasilvac/MCOC-Proyecto-2/blob/master/%5BEntrega%206%5D/%5BVicente%20Carre%C3%B1o%5D/Gr%C3%A1fico%20Tiempo%20vs%20Numero%20de%20particulas.png)
+
 
 ![Gráfico 26 Párticulas](https://github.com/nicolasilvac/MCOC-Proyecto-2/blob/master/%5BEntrega%206%5D/%5BVicente%20Carre%C3%B1o%5D/8%20Particulas.png)
 ![Gráfico 26 Párticulas](https://github.com/nicolasilvac/MCOC-Proyecto-2/blob/master/%5BEntrega%206%5D/%5BVicente%20Carre%C3%B1o%5D/26%20Particulas.png)
