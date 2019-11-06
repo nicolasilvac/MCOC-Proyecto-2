@@ -57,6 +57,8 @@
 ![](https://github.com/nicolasilvac/MCOC-Proyecto-2/blob/master/%5BEntrega%206%5D/%5BNicol%C3%A1s%20Silva%5D/Gr%C3%A1ficos/Grafico%20Tiempos%20Bloques.png)
 ![](https://github.com/nicolasilvac/MCOC-Proyecto-2/blob/master/%5BEntrega%206%5D/%5BNicol%C3%A1s%20Silva%5D/Gr%C3%A1ficos/Grafico%20Tiempo%20Final.png)
 
+De estos gráficos se puede observar que el bloque 1, donde las partículas no colisionan, en general, es constante en función del número de partículas, por otro lado, el bloque 2, en donde las partículas sí colisionan, mientras más partículas hay, el tiempo es mayor, esto es debido a que la implementación del código debe recorrer un mayor número de iteraciones porque la partícula tiene trayectorias no homogeneas. Entonces el tiempo final depende significativamente del bloque 2, el cual es lineal, a simple vista, con el número de partículas.
+
 ## Gráficos de Trayectorias de Particulas
 Alguno de los gráficos de las trayectoria de las partículas resultantes de las simulaciones fueron los siguientes:
 
