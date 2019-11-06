@@ -24,18 +24,18 @@
 - Para 100 partículas el tiempo es de = 3.87 
 
 #### Bloque 2 (Partículas que si colisionan)
-- Para 1 partículas el tiempo es de = 8.9
-- Para 2 partículas el tiempo es de = 14.72
-- Para 4 partículas el tiempo es de = 26.96
-- Para 8 partículas el tiempo es de = 52.55
-- Para 12 partículas el tiempo es de = 84.13
-- Para 16 partículas el tiempo es de = 118.06
-- Para 20 partículas el tiempo es de = 139.42
-- Para 26 partículas el tiempo es de = 174.75
-- Para 32 partículas el tiempo es de = 222.37
-- Para 40 partículas el tiempo es de = 291.53
-- Para 50 partículas el tiempo es de = 385.17
-- Para 100 partículas el tiempo es de = 872.95
+- Para 1 partículas el tiempo es de = 5.87   
+- Para 2 partículas el tiempo es de = 11.67   
+- Para 4 partículas el tiempo es de = 23.79   
+- Para 8 partículas el tiempo es de = 49.37   
+- Para 12 partículas el tiempo es de = 80.45   
+- Para 16 partículas el tiempo es de = 114.19  
+- Para 20 partículas el tiempo es de = 135.61 
+- Para 26 partículas el tiempo es de = 171.43  
+- Para 32 partículas el tiempo es de = 218.93  
+- Para 40 partículas el tiempo es de = 287.79  
+- Para 50 partículas el tiempo es de = 381.16  
+- Para 100 partículas el tiempo es de = 869.08 
 
 #### Tiempo Final
 
