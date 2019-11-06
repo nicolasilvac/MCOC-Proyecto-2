@@ -15,6 +15,36 @@ Si bien los gráficos de trayectoria de las partículas son similares a la Entre
 Se hizo un promedio del tiempo que la simulación se implementó para los 4 integrantes del grupo para varios numeros de particulas:
 ### Tiempos de simulación
 
+#### Bloque 1 (Partículas que no colisionan) [s]
+- Para 1 partículas el tiempo es de = 
+- Para 2 partículas el tiempo es de = 
+- Para 4 partículas el tiempo es de = 
+- Para 8 partículas el tiempo es de = 
+- Para 12 partículas el tiempo es de = 
+- Para 16 partículas el tiempo es de = 
+- Para 20 partículas el tiempo es de = 
+- Para 26 partículas el tiempo es de = 
+- Para 32 partículas el tiempo es de = 
+- Para 40 partículas el tiempo es de = 
+- Para 50 partículas el tiempo es de = 
+- Para 100 partículas el tiempo es de = 
+
+#### Bloque 2 (Partículas que si colisionan) [s]
+- Para 1 partículas el tiempo es de = 
+- Para 2 partículas el tiempo es de = 
+- Para 4 partículas el tiempo es de = 
+- Para 8 partículas el tiempo es de = 
+- Para 12 partículas el tiempo es de = 
+- Para 16 partículas el tiempo es de = 
+- Para 20 partículas el tiempo es de = 
+- Para 26 partículas el tiempo es de = 
+- Para 32 partículas el tiempo es de = 
+- Para 40 partículas el tiempo es de = 
+- Para 50 partículas el tiempo es de = 
+- Para 100 partículas el tiempo es de = 
+
+#### Tiempo Final [s]
+
 - Para 1 partículas el tiempo es de = 
 - Para 2 partículas el tiempo es de = 
 - Para 4 partículas el tiempo es de = 
