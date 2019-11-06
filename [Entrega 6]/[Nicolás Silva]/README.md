@@ -4,7 +4,7 @@
 - Procesador: Intel Core i5-2430M de 2.40GHz
 - RAM: 4 GB
 - Tarjeta de Video: NVIDIA GeoForce 410M
-- Sistema Operativo: Windows 10 Hombre, 64 bits
+- Sistema Operativo: Windows 10 Home, 64 bits
 - Año: 2015
 
 ### Tiempos de simulación
