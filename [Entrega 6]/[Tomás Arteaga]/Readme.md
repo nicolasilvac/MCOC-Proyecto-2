@@ -7,7 +7,7 @@
 - Edicion: Windows 10 Home
 ## Tiempo de Simulación
 
-###BLOQUE1
+ ## BLOQUE1
 -	1 partículas = 1.99600195885 segundos
 -	2 partículas = 2.26399874687 segundos
 -	4 partículas = 2.28499531746 segundos
@@ -23,7 +23,7 @@
 
 
 
-###BLOQUE2
+### BLOQUE 2
 -	1 partículas = 4.40599799156 segundos
 -	2 partículas = 8.6380007267 segundos
 -	4 partículas = 16.496004343 segundos
@@ -37,4 +37,6 @@
 - 50 partículas  = 260.228999853 segundos
 - 100  partículas  = 628.411002636 segundos
  
+ ## GRAFICO TIEMPO DE SIMULACION BLOQUE 1, BLOQUE 2 Y TIEMPO FINAL
+![](
 
