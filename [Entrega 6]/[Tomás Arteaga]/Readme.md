@@ -38,5 +38,4 @@
 - 100  partículas  = 628.411002636 segundos
  
  ## GRAFICO TIEMPO DE SIMULACION BLOQUE 1, BLOQUE 2 Y TIEMPO FINAL
-![](https:)//raw.githubusercontent.com/nicolasilvac/MCOC-Proyecto-2/master/%5BEntrega%206%5D/%5BTomás%20Arteaga%5D/GRAFICOS/Grafico%20Tiempos%20Bloques.png)
-
+![](
