@@ -23,7 +23,7 @@
 - Para 50 partículas el tiempo es de = 4.01 
 - Para 100 partículas el tiempo es de = 3.87 
 
-#### Bloque 1 (Partículas que si colisionan)
+#### Bloque 2 (Partículas que si colisionan)
 - Para 1 partículas el tiempo es de = 8.9
 - Para 2 partículas el tiempo es de = 14.72
 - Para 4 partículas el tiempo es de = 26.96
