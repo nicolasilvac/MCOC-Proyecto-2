@@ -42,3 +42,30 @@ El gráfico al que se pudo llegar para la Entrega 4 es el siguiente:
 ![](https://github.com/nicolasilvac/MCOC-Proyecto-2/blob/master/%5BEntrega%204%5D/%5BGr%C3%A1ficos%5D/tiempo_simulacion_segun_particulas_grupo.png)
 
 Comparando los gráficos de tiempos finales de la Entrega 4 y la actual, se puede concluir que la separación de particulas si contribuye a una mejora en el desempeño del código.
+
+## Gráficos de Trayectorias de Particulas
+
+- Para 1 partículas 
+![](link)
+- Para 2 partículas 
+![](link)
+- Para 4 partículas 
+![](link)
+- Para 8 partículas 
+![](link)
+- Para 12 partículas 
+![](link)
+- Para 16 partículas 
+![](link)
+- Para 20 partículas 
+![](link)
+- Para 26 partículas 
+![](link)
+- Para 32 partículas 
+![](link)
+- Para 40 partículas 
+![](link)
+- Para 50 partículas 
+![](link)
+- Para 100 partículas
+![](link)
