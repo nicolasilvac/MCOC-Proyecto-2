@@ -40,6 +40,7 @@ El siguiente gráfico presenta el tiempo total en función de la cantidad de par
 
 ![Gráficos de Tiempo total vs Número de Partículas](https://github.com/nicolasilvac/MCOC-Proyecto-2/blob/master/%5BEntrega%206%5D/%5BVicente%20Carre%C3%B1o%5D/Gr%C3%A1fico%20Tiempo%20vs%20Numero%20de%20particulas.png)
 
+A continuación se presentan gráficos que simulan el comportamiento de diferente número de partículas:
 
 ![Gráfico 26 Párticulas](https://github.com/nicolasilvac/MCOC-Proyecto-2/blob/master/%5BEntrega%206%5D/%5BVicente%20Carre%C3%B1o%5D/8%20Particulas.png)
 ![Gráfico 26 Párticulas](https://github.com/nicolasilvac/MCOC-Proyecto-2/blob/master/%5BEntrega%206%5D/%5BVicente%20Carre%C3%B1o%5D/26%20Particulas.png)
