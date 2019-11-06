@@ -17,7 +17,7 @@ tiempo_26_bloque1 =2.5819978714\
 tiempo_32_bloque1 =3.29800415039\
 tiempo_40_bloque1 =2.72000646591\
 tiempo_50_bloque1 =2.87700605392\
-tiempo_100_bloque1=3.52499866486\
+tiempo_100_bloque1=3.52499866486
 
 tiempo_1_bloque2= 3.94900155067\
 tiempo_2_bloque2=7.21000218391\
@@ -30,6 +30,6 @@ tiempo_26_bloque2=111.051000595\
 tiempo_32_bloque2=138.923995495\
 tiempo_40_bloque2=174.791992903\
 tiempo_50_bloque2=221.917994261\
-tiempo_100_bloque2=618.565001726\
+tiempo_100_bloque2=618.565001726
 
 Se debe considerar las siguientes especificaciones para mi computador:
