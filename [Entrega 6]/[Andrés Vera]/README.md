@@ -18,3 +18,8 @@
 - Para 40 partículas el tiempo es de = 690.098
 - Para 50 partículas el tiempo es de = 907.269
 - Para 100 partículas el tiempo es de =  
+ ## Gráficos
+ ![Results](https://github.com/nicolasilvac/MCOC-Proyecto-2/blob/master/%5BEntrega%206%5D/%5BAndr%C3%A9s%20Vera%5D/Grafico%208%20particulas.png)
+ ![Results](https://github.com/nicolasilvac/MCOC-Proyecto-2/blob/master/%5BEntrega%206%5D/%5BAndr%C3%A9s%20Vera%5D/Grafico%2020%20particulas.png)
+ ![Results](https://github.com/nicolasilvac/MCOC-Proyecto-2/blob/master/%5BEntrega%206%5D/%5BAndrés%20Vera%5D/Grafico%2040%20particulas.png)
+ ![Results]()
