@@ -9,7 +9,7 @@
 
 ### Tiempos de simulación
 
-#### Bloque 1 (Partículas que no colisionan)
+#### Bloque 1 (Partículas que no colisionan) [s]
 - Para 1 partículas el tiempo es de = 3.03 
 - Para 2 partículas el tiempo es de = 3.05 
 - Para 4 partículas el tiempo es de = 3.17 
@@ -23,7 +23,7 @@
 - Para 50 partículas el tiempo es de = 4.01 
 - Para 100 partículas el tiempo es de = 3.87 
 
-#### Bloque 2 (Partículas que si colisionan)
+#### Bloque 2 (Partículas que si colisionan) [s]
 - Para 1 partículas el tiempo es de = 5.87   
 - Para 2 partículas el tiempo es de = 11.67   
 - Para 4 partículas el tiempo es de = 23.79   
@@ -37,7 +37,7 @@
 - Para 50 partículas el tiempo es de = 381.16  
 - Para 100 partículas el tiempo es de = 869.08 
 
-#### Tiempo Final
+#### Tiempo Final [s]
 
 - Para 1 partículas el tiempo es de = 8.9
 - Para 2 partículas el tiempo es de = 14.72
