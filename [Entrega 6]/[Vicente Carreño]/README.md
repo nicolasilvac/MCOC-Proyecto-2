@@ -37,6 +37,8 @@ tiempo_100_bloque2=618.565001726
 ![Gráfico 26 Párticulas](https://github.com/nicolasilvac/MCOC-Proyecto-2/blob/master/%5BEntrega%206%5D/%5BVicente%20Carre%C3%B1o%5D/26%20Particulas.png)
 ![Gráfico 50 Párticulas](https://github.com/nicolasilvac/MCOC-Proyecto-2/blob/master/%5BEntrega%206%5D/%5BVicente%20Carre%C3%B1o%5D/50%20Particulas.png)
 ![Gráfico 100 Párticulas](https://github.com/nicolasilvac/MCOC-Proyecto-2/blob/master/%5BEntrega%206%5D/%5BVicente%20Carre%C3%B1o%5D/100%20Particulas.png)
+
+
 Se debe considerar las siguientes especificaciones para mi computador:
 - Marca: Dell
 - Procesador: Intel Core i7-4600U de 2.10GHz
