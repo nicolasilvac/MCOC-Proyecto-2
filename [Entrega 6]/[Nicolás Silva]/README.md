@@ -57,4 +57,21 @@
 ![](https://github.com/nicolasilvac/MCOC-Proyecto-2/blob/master/%5BEntrega%206%5D/%5BNicol%C3%A1s%20Silva%5D/Gr%C3%A1ficos/Grafico%20Tiempos%20Bloques.png)
 ![](https://github.com/nicolasilvac/MCOC-Proyecto-2/blob/master/%5BEntrega%206%5D/%5BNicol%C3%A1s%20Silva%5D/Gr%C3%A1ficos/Grafico%20Tiempo%20Final.png)
 
+## Gráficos de Trayectorias de Particulas
+Alguno de los gráficos de las trayectoria de las partículas resultantes de las simulaciones fueron los siguientes:
+
+- Para 2 partículas: 
+![](https://github.com/nicolasilvac/MCOC-Proyecto-2/blob/master/%5BEntrega%206%5D/Gr%C3%A1ficos/Grafico%202%20particulas.png)
+- Para 8 partículas:
+![](https://github.com/nicolasilvac/MCOC-Proyecto-2/blob/master/%5BEntrega%206%5D/Gr%C3%A1ficos/Grafico%208%20particulas.png)
+- Para 12 partículas: 
+![](https://github.com/nicolasilvac/MCOC-Proyecto-2/blob/master/%5BEntrega%206%5D/Gr%C3%A1ficos/Grafico%2012%20particulas.png)
+- Para 20 partículas:
+![](https://github.com/nicolasilvac/MCOC-Proyecto-2/blob/master/%5BEntrega%206%5D/Gr%C3%A1ficos/Grafico%2020%20particulas.png)
+- Para 32 partículas:
+![](https://github.com/nicolasilvac/MCOC-Proyecto-2/blob/master/%5BEntrega%206%5D/Gr%C3%A1ficos/Grafico%2032%20particulas.png)
+- Para 50 partículas: 
+![](https://github.com/nicolasilvac/MCOC-Proyecto-2/blob/master/%5BEntrega%206%5D/Gr%C3%A1ficos/Grafico%2050%20particulas.png)
+- Para 100 partículas:
+![](https://github.com/nicolasilvac/MCOC-Proyecto-2/blob/master/%5BEntrega%206%5D/Gr%C3%A1ficos/Grafico%20100%20particulas.png)
 
