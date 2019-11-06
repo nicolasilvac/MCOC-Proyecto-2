@@ -46,26 +46,26 @@ Comparando los gráficos de tiempos finales de la Entrega 4 y la actual, se pued
 ## Gráficos de Trayectorias de Particulas
 
 - Para 1 partículas: 
-![](link)
+![](https://github.com/nicolasilvac/MCOC-Proyecto-2/blob/master/%5BEntrega%206%5D/Gr%C3%A1ficos/Grafico%201%20particulas.png)
 - Para 2 partículas: 
-![](link)
+![](https://github.com/nicolasilvac/MCOC-Proyecto-2/blob/master/%5BEntrega%206%5D/Gr%C3%A1ficos/Grafico%202%20particulas.png)
 - Para 4 partículas:
-![](link)
+![](https://github.com/nicolasilvac/MCOC-Proyecto-2/blob/master/%5BEntrega%206%5D/Gr%C3%A1ficos/Grafico%204%20particulas.png)
 - Para 8 partículas:
-![](link)
+![](https://github.com/nicolasilvac/MCOC-Proyecto-2/blob/master/%5BEntrega%206%5D/Gr%C3%A1ficos/Grafico%208%20particulas.png)
 - Para 12 partículas: 
-![](link)
+![](https://github.com/nicolasilvac/MCOC-Proyecto-2/blob/master/%5BEntrega%206%5D/Gr%C3%A1ficos/Grafico%2012%20particulas.png)
 - Para 16 partículas:
-![](link)
+![](https://github.com/nicolasilvac/MCOC-Proyecto-2/blob/master/%5BEntrega%206%5D/Gr%C3%A1ficos/Grafico%2016%20particulas.png)
 - Para 20 partículas:
-![](link)
+![](https://github.com/nicolasilvac/MCOC-Proyecto-2/blob/master/%5BEntrega%206%5D/Gr%C3%A1ficos/Grafico%2020%20particulas.png)
 - Para 26 partículas: 
-![](link)
+![](https://github.com/nicolasilvac/MCOC-Proyecto-2/blob/master/%5BEntrega%206%5D/Gr%C3%A1ficos/Grafico%2026%20particulas.png)
 - Para 32 partículas:
-![](link)
+![](https://github.com/nicolasilvac/MCOC-Proyecto-2/blob/master/%5BEntrega%206%5D/Gr%C3%A1ficos/Grafico%2032%20particulas.png)
 - Para 40 partículas: 
-![](link)
+![](https://github.com/nicolasilvac/MCOC-Proyecto-2/blob/master/%5BEntrega%206%5D/Gr%C3%A1ficos/Grafico%2040%20particulas.png)
 - Para 50 partículas: 
-![](link)
+![](https://github.com/nicolasilvac/MCOC-Proyecto-2/blob/master/%5BEntrega%206%5D/Gr%C3%A1ficos/Grafico%2050%20particulas.png)
 - Para 100 partículas:
-![](link)
+![](https://github.com/nicolasilvac/MCOC-Proyecto-2/blob/master/%5BEntrega%206%5D/Gr%C3%A1ficos/Grafico%20100%20particulas.png)
