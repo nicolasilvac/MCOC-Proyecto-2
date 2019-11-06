@@ -24,7 +24,11 @@
  ![Results](https://github.com/nicolasilvac/MCOC-Proyecto-2/blob/master/%5BEntrega%206%5D/%5BAndrés%20Vera%5D/Grafico%2040%20particulas.png)
  ![Results](https://github.com/nicolasilvac/MCOC-Proyecto-2/blob/master/%5BEntrega%206%5D/%5BAndr%C3%A9s%20Vera%5D/Grafico%20100%20particulas.png)
 ## Gráficos de tiempo por cantidad de particulas
--Tiempo total
+-Tiempo total actual
 ![Results](https://github.com/nicolasilvac/MCOC-Proyecto-2/blob/master/%5BEntrega%206%5D/%5BAndr%C3%A9s%20Vera%5D/Grafico%20Tiempo%20Final.png)
--Bloque 1 son las particulas que no colisionan entre ellas, bloque 2 son las particulas que colisionan entre ellas.
+-Tiempo total entrega4
+![Results](https://github.com/nicolasilvac/MCOC-Proyecto-2/blob/master/%5BEntrega%204%5D/%5BAndr%C3%A9s%20Vera%5D/tiempo%20de%20simulacion.png)
+Se puede notar la diferencia en tiempos de ejecución para una cantidad considerable de particulas, haciendo que el codigo actual demuestro por si solo que esta optimizado.
+-Tiempo actual por bloques; Bloque 1 son las particulas que no colisionan entre ellas, bloque 2 son las particulas que colisionan entre ellas.
 ![Results](https://github.com/nicolasilvac/MCOC-Proyecto-2/blob/master/%5BEntrega%206%5D/%5BAndr%C3%A9s%20Vera%5D/Grafico%20Tiempos%20Bloques.png)
+
