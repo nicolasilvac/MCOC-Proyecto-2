@@ -59,6 +59,12 @@
 
 De estos gráficos se puede observar que el bloque 1, donde las partículas no colisionan, en general, es constante en función del número de partículas, por otro lado, el bloque 2, en donde las partículas sí colisionan, mientras más partículas hay, el tiempo es mayor, esto es debido a que la implementación del código debe recorrer un mayor número de iteraciones porque la partícula tiene trayectorias no homogeneas. Entonces el tiempo final depende significativamente del bloque 2, el cual es lineal, a simple vista, con el número de partículas.
 
+### Gráfico Entrega 4
+![](https://github.com/nicolasilvac/MCOC-Proyecto-2/blob/master/%5BEntrega%204%5D/%5BNicol%C3%A1s%20Silva%5D/tiempo_simulacion_segun_particulas.png)
+
+Haciendo la comparación de los tiempos de simulación de la Entrega 4 con la actual, se puede valorar la eficacia del nuevo desempeño del código, bajó considerablemente el tiempo, además de que, si antes, a simple vista, el tiempo variaba cuadráticamente con el número de partículas, ahora varía, a simple vista, de forma lineal, lo que para un alto número de partículas, con el código anterior quizás no se iba a poder simular, por la alta memoria que el computador debiese ocupar, ahora se podrá ocupar una menor cantidad de esta para el mismo numero de particulas.
+
+
 ## Gráficos de Trayectorias de Particulas
 Alguno de los gráficos de las trayectoria de las partículas resultantes de las simulaciones fueron los siguientes:
 
