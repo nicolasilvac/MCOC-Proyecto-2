@@ -45,27 +45,27 @@ Comparando los gráficos de tiempos finales de la Entrega 4 y la actual, se pued
 
 ## Gráficos de Trayectorias de Particulas
 
-- Para 1 partículas 
+- Para 1 partículas: 
 ![](link)
-- Para 2 partículas 
+- Para 2 partículas: 
 ![](link)
-- Para 4 partículas 
+- Para 4 partículas:
 ![](link)
-- Para 8 partículas 
+- Para 8 partículas:
 ![](link)
-- Para 12 partículas 
+- Para 12 partículas: 
 ![](link)
-- Para 16 partículas 
+- Para 16 partículas:
 ![](link)
-- Para 20 partículas 
+- Para 20 partículas:
 ![](link)
-- Para 26 partículas 
+- Para 26 partículas: 
 ![](link)
-- Para 32 partículas 
+- Para 32 partículas:
 ![](link)
-- Para 40 partículas 
+- Para 40 partículas: 
 ![](link)
-- Para 50 partículas 
+- Para 50 partículas: 
 ![](link)
-- Para 100 partículas
+- Para 100 partículas:
 ![](link)
