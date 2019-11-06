@@ -32,6 +32,7 @@ A continuación, se muestran en los gráficos tiempo vs numero de particulas, lo
 - Bloque 1: Particulas que no colisionan
 - Bloque 2: Particulas que colisionan
 ![](link)
+
 Y en segunda ocasión se muestra el gráfico tiempo vs numero de particulas del total del tiempo de todas las particulas.
 
 ![](link)
