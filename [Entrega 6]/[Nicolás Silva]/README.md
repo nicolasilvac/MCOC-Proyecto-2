@@ -9,15 +9,52 @@
 
 ### Tiempos de simulación
 
-- Para 1 partículas el tiempo es de = 
-- Para 2 partículas el tiempo es de = 
-- Para 4 partículas el tiempo es de = 
-- Para 8 partículas el tiempo es de = 
-- Para 12 partículas el tiempo es de = 
-- Para 16 partículas el tiempo es de = 
-- Para 20 partículas el tiempo es de = 
-- Para 26 partículas el tiempo es de = 
-- Para 32 partículas el tiempo es de = 
-- Para 40 partículas el tiempo es de = 
-- Para 50 partículas el tiempo es de = 
-- Para 100 partículas el tiempo es de = 
+#### Bloque 1 (Partículas que no colisionan)
+- Para 1 partículas el tiempo es de = 3.03 
+- Para 2 partículas el tiempo es de = 3.05 
+- Para 4 partículas el tiempo es de = 3.17 
+- Para 8 partículas el tiempo es de = 3.18 
+- Para 12 partículas el tiempo es de = 3.68
+- Para 16 partículas el tiempo es de = 3.870
+- Para 20 partículas el tiempo es de = 3.81
+- Para 26 partículas el tiempo es de = 3.32
+- Para 32 partículas el tiempo es de = 3.44 
+- Para 40 partículas el tiempo es de = 3.74 
+- Para 50 partículas el tiempo es de = 4.01 
+- Para 100 partículas el tiempo es de = 3.87 
+
+#### Bloque 1 (Partículas que si colisionan)
+- Para 1 partículas el tiempo es de = 8.9
+- Para 2 partículas el tiempo es de = 14.72
+- Para 4 partículas el tiempo es de = 26.96
+- Para 8 partículas el tiempo es de = 52.55
+- Para 12 partículas el tiempo es de = 84.13
+- Para 16 partículas el tiempo es de = 118.06
+- Para 20 partículas el tiempo es de = 139.42
+- Para 26 partículas el tiempo es de = 174.75
+- Para 32 partículas el tiempo es de = 222.37
+- Para 40 partículas el tiempo es de = 291.53
+- Para 50 partículas el tiempo es de = 385.17
+- Para 100 partículas el tiempo es de = 872.95
+
+#### Tiempo Final
+
+- Para 1 partículas el tiempo es de = 8.9
+- Para 2 partículas el tiempo es de = 14.72
+- Para 4 partículas el tiempo es de = 26.96
+- Para 8 partículas el tiempo es de = 52.55
+- Para 12 partículas el tiempo es de = 84.13
+- Para 16 partículas el tiempo es de = 118.06
+- Para 20 partículas el tiempo es de = 139.42
+- Para 26 partículas el tiempo es de = 174.75
+- Para 32 partículas el tiempo es de = 222.37
+- Para 40 partículas el tiempo es de = 291.53
+- Para 50 partículas el tiempo es de = 385.17
+- Para 100 partículas el tiempo es de = 872.95
+
+## Gráficos Tiempo vs Número de Partículas
+
+![](https://github.com/nicolasilvac/MCOC-Proyecto-2/blob/master/%5BEntrega%206%5D/%5BNicol%C3%A1s%20Silva%5D/Gr%C3%A1ficos/Grafico%20Tiempos%20Bloques.png)
+![](https://github.com/nicolasilvac/MCOC-Proyecto-2/blob/master/%5BEntrega%206%5D/%5BNicol%C3%A1s%20Silva%5D/Gr%C3%A1ficos/Grafico%20Tiempo%20Final.png)
+
+
